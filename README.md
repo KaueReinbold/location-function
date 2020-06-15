@@ -10,13 +10,21 @@ The technical objective is to study [Azure Functions](https://docs.microsoft.com
 
 | Country | States | Cities |
 | ------- | ------ | ------ |
-| Brazil  | Yes    | No     |
+| Brazil  | Yes    | Yes    |
 
 ### List of States
 
 Use the endpoint `api/states/{country_name}`
 
 > Replace `country_name` to the value under the supported countries list.
+
+### List of Cities
+
+Use the endpoint `api/{country_name}/{state_initials}/cities`
+
+> Replace `country_name` to the value under the supported countries list.
+>
+> Replace `state_initials` to the value initials received on states call.
 
 ---
 
