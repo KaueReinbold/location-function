@@ -1,0 +1,19 @@
+version: '3'
+
+networks:
+  location-search-network:
+    driver: bridge
+
+services:
+  location-search:
+    image: location-search-image:latest
+    container_name: location-search
+    ports:
+      - '7777:80'
+    environment:
+      - IBGEBaseUrl=https://servicodados.ibge.gov.br/api/v1/
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - location-search-network

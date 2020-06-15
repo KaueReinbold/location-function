@@ -1,0 +1,6 @@
+[Oo]bj/
+[Bb]in/
+TestResults/
+.nuget/
+
+local.settings.json
