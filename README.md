@@ -1,10 +1,12 @@
 # Location Search
 
-Azure Function to search location information from a Country. The Function will call an endpoint teh provides an updated source of information to retrieve and delivery parsed information.
+Azure Function to search information from a Country. The Function will call an endpoint that provides an updated source of information.
+
+The technical objective is to study [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/) with [.Net Core](https://docs.microsoft.com/en-us/dotnet/core/).
 
 ---
 
-## Supported Locations
+## Supported Countries
 
 | Country | States | Cities |
 | ------- | ------ | ------ |
@@ -14,7 +16,7 @@ Azure Function to search location information from a Country. The Function will 
 
 Use the endpoint `api/states/{country_name}`
 
-> Replace `country_name` to the the supported under the supported countries list.
+> Replace `country_name` to the value under the supported countries list.
 
 ---
 
