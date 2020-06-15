@@ -1,6 +1,22 @@
 # Location Search
 
-Azure Function to search location information from a Country.
+Azure Function to search location information from a Country. The Function will call an endpoint teh provides an updated source of information to retrieve and delivery parsed information.
+
+---
+
+## Supported Locations
+
+| Country | States | Cities |
+| ------- | ------ | ------ |
+| Brazil  | Yes    | No     |
+
+### List of States
+
+Use the endpoint `api/states/{country_name}`
+
+> Replace `country_name` to the the supported under the supported countries list.
+
+---
 
 ## Getting Started
 
