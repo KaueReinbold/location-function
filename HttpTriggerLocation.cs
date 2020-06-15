@@ -24,7 +24,7 @@ namespace LocationFunction
 
         [FunctionName("HttpTriggerLocation")]
         public async Task<IActionResult> States(
-            [HttpTrigger("get", Route = "states/{country}")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "states/{country}")] HttpRequest req,
             ILogger log, [FromQuery] string country)
         {
             switch (country)
