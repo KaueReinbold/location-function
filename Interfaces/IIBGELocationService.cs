@@ -7,5 +7,6 @@ namespace LocationFunction.Interfaces
     public interface IIBGELocationService
     {
         Task<IEnumerable<IBGEState>> GetStates();
+        Task<IEnumerable<IBGECity>> GetCities(string initials);
     }
 }
